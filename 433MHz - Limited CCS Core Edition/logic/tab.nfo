@@ -1,0 +1,115 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void display_tab() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+
+extern void mx_tab() is called from 0 sites in this file.
+    It appears to be inlineable (size = 27 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	set_value() (1 times)
+	clear_line() (1 times)
+
+extern void plug_SetupRadio433_OOK() is called from 1 sites in this file.
+    It appears to be inlineable (size = 76 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	WriteSingleReg() (25 times)
+
+extern void sx_tab() is called from 0 sites in this file.
+    It appears to be inlineable (size = 82 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	Timer0_A4_Delay() (1 times)
+	tx_tab_sequence() (1 times)
+	display_symbol() (6 times)
+	set_value() (1 times)
+	clear_line() (1 times)
+
+extern void tx_tab_sequence() is called from 1 sites in this file.
+    It appears to be inlineable (size = 186 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	close_radio() (1 times)
+	__set_interrupt_state() (1 times)
+	Strobe() (2 times)
+	_disable_interrupts() (1 times)
+	__get_interrupt_state() (1 times)
+	plug_SetupRadio433_OOK() (1 times)
+	Timer0_A4_Delay() (2 times)
+	open_radio() (1 times)
+
+
+These functions may be recursive:
+	display_tab()
+	mx_tab()
+	sx_tab()
+	tx_tab_sequence()
+	plug_SetupRadio433_OOK()
+
+These external functions are called but not defined here:
+	open_radio()
+	__get_interrupt_state()
+	_disable_interrupts()
+	Strobe()
+	__set_interrupt_state()
+	close_radio()
+	display_symbol()
+	Timer0_A4_Delay()
+	WriteSingleReg()
+	clear_line()
+	set_value()
+	display_chars()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void plug_SetupRadio433_OOK() is called from 1 sites in this file.
+    It appears to be inlineable (size = 76 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void tx_tab_sequence() is called from 1 sites in this file.
+    It appears to be inlineable (size = 186 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	plug_SetupRadio433_OOK() (1 times)
+
+==============================================================================
+
+extern void sx_tab() is called from 0 sites in this file.
+    It appears to be inlineable (size = 82 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tx_tab_sequence() (1 times)
+
+==============================================================================
+
+extern void mx_tab() is called from 0 sites in this file.
+    It appears to be inlineable (size = 27 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void display_tab() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==

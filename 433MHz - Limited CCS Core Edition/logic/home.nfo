@@ -1,0 +1,95 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void SetupRadio433_OOK() is called from 1 sites in this file.
+    It appears to be inlineable (size = 76 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	WriteSingleReg() (25 times)
+
+extern void display_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+
+extern void sx_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 42 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	Timer0_A4_Delay() (1 times)
+	tx_ook_sequence() (1 times)
+	display_symbol() (6 times)
+
+extern void tx_ook_sequence() is called from 1 sites in this file.
+    It appears to be inlineable (size = 86 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	close_radio() (1 times)
+	__set_interrupt_state() (1 times)
+	Strobe() (2 times)
+	_disable_interrupts() (1 times)
+	__get_interrupt_state() (1 times)
+	SetupRadio433_OOK() (1 times)
+	Timer0_A4_Delay() (1 times)
+	open_radio() (1 times)
+
+
+These functions may be recursive:
+	display_hgate()
+	sx_hgate()
+	tx_ook_sequence()
+	SetupRadio433_OOK()
+
+These external functions are called but not defined here:
+	open_radio()
+	__get_interrupt_state()
+	_disable_interrupts()
+	Strobe()
+	__set_interrupt_state()
+	close_radio()
+	display_symbol()
+	Timer0_A4_Delay()
+	display_chars()
+	WriteSingleReg()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void SetupRadio433_OOK() is called from 1 sites in this file.
+    It appears to be inlineable (size = 76 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void tx_ook_sequence() is called from 1 sites in this file.
+    It appears to be inlineable (size = 86 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	SetupRadio433_OOK() (1 times)
+
+==============================================================================
+
+extern void sx_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 42 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	tx_ook_sequence() (1 times)
+
+==============================================================================
+
+extern void display_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==

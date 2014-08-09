@@ -1,0 +1,67 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void display_counter() is called from 1 sites in this file.
+    It appears to be inlineable (size = 17 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+	int_to_array() (1 times)
+
+extern void mx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 27 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	set_value() (1 times)
+	clear_line() (1 times)
+
+extern void sx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 15 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_counter() (1 times)
+
+
+These functions may be recursive:
+	mx_counter()
+	sx_counter()
+	display_counter()
+
+These external functions are called but not defined here:
+	clear_line()
+	set_value()
+	int_to_array()
+	display_chars()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void display_counter() is called from 1 sites in this file.
+    It appears to be inlineable (size = 17 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void sx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 15 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_counter() (1 times)
+
+==============================================================================
+
+extern void mx_counter() is called from 0 sites in this file.
+    It appears to be inlineable (size = 27 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==

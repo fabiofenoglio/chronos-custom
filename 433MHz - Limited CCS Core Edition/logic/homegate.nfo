@@ -1,0 +1,109 @@
+MSP430 C/C++ Optimizer                  v4.2.1
+Build Number 1NGPW-KDADEMDK-RTARQ-WAR-ZACIF_U_S_R
+
+		======File-level Analysis Summary======
+
+
+extern void display_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_chars() (1 times)
+
+extern void homegate_setup_radio() is called from 1 sites in this file.
+    It appears to be inlineable (size = 76 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	WriteSingleReg() (25 times)
+
+extern void homegate_transmit() is called from 1 sites in this file.
+    It appears to be inlineable (size = 107 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	Strobe() (2 times)
+	close_radio() (1 times)
+	__set_interrupt_state() (1 times)
+	_disable_interrupts() (1 times)
+	__get_interrupt_state() (1 times)
+	homegate_setup_radio() (1 times)
+	Timer0_A4_Delay() (2 times)
+	open_radio() (1 times)
+
+extern void mx_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 1 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void sx_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 49 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	Timer0_A4_Delay() (1 times)
+	homegate_transmit() (1 times)
+	display_symbol() (6 times)
+
+
+These functions may be recursive:
+	display_hgate()
+	sx_hgate()
+	homegate_transmit()
+	homegate_setup_radio()
+
+These external functions are called but not defined here:
+	display_symbol()
+	open_radio()
+	Timer0_A4_Delay()
+	__get_interrupt_state()
+	_disable_interrupts()
+	__set_interrupt_state()
+	close_radio()
+	Strobe()
+	WriteSingleReg()
+	display_chars()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void homegate_setup_radio() is called from 1 sites in this file.
+    It appears to be inlineable (size = 76 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void homegate_transmit() is called from 1 sites in this file.
+    It appears to be inlineable (size = 107 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	homegate_setup_radio() (1 times)
+
+==============================================================================
+
+extern void sx_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 49 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	homegate_transmit() (1 times)
+
+==============================================================================
+
+extern void mx_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 1 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void display_hgate() is called from 0 sites in this file.
+    It appears to be inlineable (size = 12 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+== END OF INFO OUTPUT==
